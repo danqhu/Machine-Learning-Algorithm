@@ -55,39 +55,39 @@ class LinearRegressionwithUnivariable():
 
 
 
-# # Test by using simulated data
-def genData(numPoints, bias, variance):
-    x = np.zeros(shape=(numPoints))
-    y = np.zeros(shape=numPoints)
-    # basically a straight line
-    for i in range(0, numPoints):
-        # bias feature
-        x[i] = i
-        # our target variable
-        y[i] = (i + bias) + random.uniform(0, 1) * variance
-    return x, y
-x, y = genData(100, 25, 10)
+# # # Test by using simulated data
+# def genData(numPoints, bias, variance):
+#     x = np.zeros(shape=(numPoints))
+#     y = np.zeros(shape=numPoints)
+#     # basically a straight line
+#     for i in range(0, numPoints):
+#         # bias feature
+#         x[i] = i
+#         # our target variable
+#         y[i] = (i + bias) + random.uniform(0, 1) * variance
+#     return x, y
+# x, y = genData(100, 25, 10)
+#
+# xTrain = x
+# xTest = x
+# yTrain = y
+# yTest = y
+#
+# # Model training and predicting
+# regr = LinearRegressionwithUnivariable()
+# theta = regr.fit(xTrain,yTrain,alpha=0.0005,delta=0.00000001,numOfIteration=100000)
+# yTest = regr.predict(xTest)
+#
+# #plot the results
+# import matplotlib.pyplot as plt
+#
+# plt.scatter(xTrain,yTrain,color = 'black')
+# plt.plot(xTest,yTest,color='blue')
+# plt.show()
 
-xTrain = x
-xTest = x
-yTrain = y
-yTest = y
-
-# Model training and predicting
-regr = LinearRegressionwithUnivariable()
-theta = regr.fit(xTrain,yTrain,alpha=0.0005,delta=0.00000001,numOfIteration=100000)
-yTest = regr.predict(xTest)
-
-#plot the results
-import matplotlib.pyplot as plt
-
-plt.scatter(xTrain,yTrain,color = 'black')
-plt.plot(xTest,yTest,color='blue')
-plt.show()
 
 
-
-# Test by using real data (sklearn.datasets.load_diabetes())
+# # Test by using real data (sklearn.datasets.load_diabetes())
 # from sklearn import datasets
 #
 # diabetes = datasets.load_diabetes()
@@ -101,8 +101,36 @@ plt.show()
 #
 # # Model training and predicting
 # regr = LinearRegressionwithUnivariable()
-# theta = regr.fit(xTrain,yTrain,alpha=0.001,delta=0.001,numOfIteration=500000)
+# theta = regr.fit(xTrain,yTrain,alpha=0.5,delta=0.00001,numOfIteration=500000)
 # yTest = regr.predict(xTest)
+#
+# #plot the results
+# import matplotlib.pyplot as plt
+#
+# plt.scatter(xTrain,yTrain,color = 'black')
+# plt.plot(xTest,yTest,color='blue')
+# plt.show()
+
+
+#
+# # Test by comparing with the scikit-learn package: linear_model.LinearRegression()
+# from sklearn import datasets, linear_model
+#
+# diabetes = datasets.load_diabetes()
+#
+# # Add a dimension for the array
+# x = diabetes.data[:,np.newaxis,2]
+# y = diabetes.target
+#
+# xTrain = x[:-20]
+# xTest = x[-20:]
+# yTrain = y[:-20]
+# yTest = y[-20:]
+#
+# regr = linear_model.LinearRegression()
+# regr.fit(xTrain,yTrain)
+# yTest = regr.predict(xTest)
+#
 #
 # #plot the results
 # import matplotlib.pyplot as plt
