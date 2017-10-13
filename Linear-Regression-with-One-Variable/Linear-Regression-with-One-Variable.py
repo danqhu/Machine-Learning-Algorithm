@@ -1,5 +1,4 @@
 # Linear-Regression-with-One-Variable
-# DataSet: sklearn.datasets.load_diabetes()
 #
 
 
@@ -53,37 +52,53 @@ class LinearRegressionwithUnivariable():
 
         return  self.yTest
 
+    def featureScaling(self,x):
+
+        max = np.max(x)
+        min = np.min(x)
+        avg = np.average(x)
+
+        xScaled = [(xi-avg)/(max-min) for xi in x]
+
+        return  xScaled
 
 
-# # # Test by using simulated data
-# def genData(numPoints, bias, variance):
-#     x = np.zeros(shape=(numPoints))
-#     y = np.zeros(shape=numPoints)
-#     # basically a straight line
-#     for i in range(0, numPoints):
-#         # bias feature
-#         x[i] = i
-#         # our target variable
-#         y[i] = (i + bias) + random.uniform(0, 1) * variance
-#     return x, y
-# x, y = genData(100, 25, 10)
-#
-# xTrain = x
-# xTest = x
-# yTrain = y
-# yTest = y
-#
-# # Model training and predicting
-# regr = LinearRegressionwithUnivariable()
-# theta = regr.fit(xTrain,yTrain,alpha=0.0005,delta=0.00000001,numOfIteration=100000)
-# yTest = regr.predict(xTest)
-#
-# #plot the results
-# import matplotlib.pyplot as plt
-#
-# plt.scatter(xTrain,yTrain,color = 'black')
-# plt.plot(xTest,yTest,color='blue')
-# plt.show()
+
+
+# # Test by using simulated data
+def genData(numPoints, bias, variance):
+    x = np.zeros(shape=(numPoints))
+    y = np.zeros(shape=numPoints)
+    # basically a straight line
+    for i in range(0, numPoints):
+        # bias feature
+        x[i] = i
+        # our target variable
+        y[i] = (i + bias) + random.uniform(0, 1) * variance
+    return x, y
+x, y = genData(100, 25, 10)
+
+
+# Model training and predicting
+regr = LinearRegressionwithUnivariable()
+
+# Feature Scaling (After scaling, the coefficients obtained by the algorithm are different from the no scaled one, which we must use the scaled test set to test)
+# x = regr.featureScaling(x)
+
+xTrain = x
+xTest = x
+yTrain = y
+yTest = y
+
+theta = regr.fit(xTrain,yTrain,alpha=0.0005,delta=0.00001,numOfIteration=100000)
+yTest = regr.predict(xTest)
+
+#plot the results
+import matplotlib.pyplot as plt
+
+plt.scatter(xTrain,yTrain,color = 'black')
+plt.plot(xTest,yTest,color='blue')
+plt.show()
 
 
 
@@ -112,7 +127,7 @@ class LinearRegressionwithUnivariable():
 # plt.show()
 
 
-#
+
 # # Test by comparing with the scikit-learn package: linear_model.LinearRegression()
 # from sklearn import datasets, linear_model
 #
