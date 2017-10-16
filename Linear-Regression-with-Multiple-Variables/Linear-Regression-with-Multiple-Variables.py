@@ -2,11 +2,12 @@
 
 import numpy as np
 import random
-
+import time
 
 class LinearRegressionwithMultiplevariable():
 
-    def fit(self, xTrain, yTrain, theta = None , alpha = 0.0005, epsilon = 0.00000000000001, numOfIteration = 100000):
+    def fitByGradientDescent(self, xTrain, yTrain, theta = None , alpha = 0.0005, epsilon = 0.00000000000001, numOfIteration = 100000):
+        startTime = time.process_time()
         self.xTrain = xTrain # variables
         self.yTrain = yTrain[:,np.newaxis] # target
         self.xTrans = np.hstack((np.ones((self.xTrain.shape[0],1)),self.xTrain))
@@ -35,10 +36,28 @@ class LinearRegressionwithMultiplevariable():
             if (i == numOfIteration):
                 print('The number of iteration achieved the %d \nIteration %d | Cost: %f' % (i, cost))
 
-        print('\nCoefficients:\nTheta_0: %f    Theta_1: %f' % (self.theta[0], self.theta[1]))
+        print('\nCoefficients:')
         print(self.theta)
+        endTime = time.process_time() - startTime
+        print('\nProcessing Time: %f' % endTime)
 
         return self.theta
+
+    def fitByNormalEquation(self,xTrain, yTrain):
+        startTime = time.process_time()
+        self.xTrain = xTrain  # variables
+        self.yTrain = yTrain[:, np.newaxis]  # target
+        self.xTrans = np.hstack((np.ones((self.xTrain.shape[0], 1)), self.xTrain))
+
+        self.theta = np.dot(np.dot(np.linalg.pinv(np.dot(self.xTrans.T,self.xTrans)),self.xTrans.T),self.yTrain)
+        print('\nCoefficients:')
+        print(self.theta)
+        endTime = time.process_time() - startTime
+        print('\nProcessing Time: %f' % endTime)
+
+        return self.theta
+
+
 
     def predict(self,xTest):
         self.xTest = xTest
@@ -87,7 +106,8 @@ yTest = y
 
 # Model training and predicting
 regr = LinearRegressionwithMultiplevariable()
-theta = regr.fit(xTrain,yTrain,alpha=0.0001,epsilon=0.0001,numOfIteration=1000000)
+# theta = regr.fitByGradientDescent(xTrain,yTrain,alpha=0.0001,epsilon=0.000001,numOfIteration=1000000)
+theta = regr.fitByNormalEquation(xTrain,yTrain)
 yTest = regr.predict(xTest)
 
 #plot the results
