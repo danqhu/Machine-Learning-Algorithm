@@ -1,38 +1,32 @@
-# Linear-Regression-with-One-Variable
-#
-
+# Linear-Regression-with-Multiple-Variables
 
 import numpy as np
 import random
 
 
-class LinearRegressionwithUnivariable():
+class LinearRegressionwithMultiplevariable():
 
-    def fit(self, xTrain, yTrain, theta = np.zeros(2), alpha = 0.0005, delta = 0.00000000000001, numOfIteration = 100000):
-        self.xTrain = xTrain[:,np.newaxis] # uinvariable
+    def fit(self, xTrain, yTrain, theta = None , alpha = 0.0005, epsilon = 0.00000000000001, numOfIteration = 100000):
+        self.xTrain = xTrain # variables
         self.yTrain = yTrain[:,np.newaxis] # target
-        self.xTrans = np.hstack((np.ones_like(self.xTrain),self.xTrain))
+        self.xTrans = np.hstack((np.ones((self.xTrain.shape[0],1)),self.xTrain))
         self.m = self.xTrans.shape[0]
-        self.theta = theta[:,np.newaxis]
-        self.tempForTheta = np.zeros_like(self.theta)
+
+        self.theta = np.zeros((self.xTrans.shape[1],1)) if theta is None else theta
         self.alpha = alpha
-        self.delta = delta
-        self.tempForCost = np.zeros_like(self.delta)
+        self.epsilon = epsilon
+        self.tempForCost = np.zeros_like(self.epsilon)
         self.numOfIteration = numOfIteration
 
         for i in range(0,self.numOfIteration):
-            # # Original Version based the equations in the Machine Learning course on Coursera
-            # self.tempForTheta[0] = self.theta[0] - self.alpha/self.m*(np.sum(np.dot(self.xTrans,self.theta)-self.yTrain))
-            # self.tempForTheta[1]= self.theta[1] - self.alpha/self.m*(np.sum((np.dot(self.xTrans,self.theta)-self.yTrain)*self.xTrain))
-            #
-            # self.theta = self.tempForTheta
-
             # Improved Version -- Added Cost Function and Delta to determine the convergence level
+            # Actually, compared with the Univariable LR, we can notice that the improved version of gradient descent algorithm
+            # has the ability to deal with multiple variable LR.
             hypothesis = np.dot(self.xTrans,self.theta)
             loss = hypothesis - self.yTrain
             cost = np.sum(loss ** 2)/(2*self.m)
-            if (abs(cost - self.tempForCost)) <= self.delta :
-                print('Cost changes Less than Delta %f \nIteration %d | Cost: %f' % (self.delta, i, cost))
+            if (abs(cost - self.tempForCost)) <= self.epsilon :
+                print('Cost changes Less than Delta %f \nIteration %d | Cost: %f' % (self.epsilon, i, cost))
                 break
             else:
                 self.tempForCost = cost
@@ -42,62 +36,65 @@ class LinearRegressionwithUnivariable():
                 print('The number of iteration achieved the %d \nIteration %d | Cost: %f' % (i, cost))
 
         print('\nCoefficients:\nTheta_0: %f    Theta_1: %f' % (self.theta[0], self.theta[1]))
+        print(self.theta)
 
         return self.theta
 
     def predict(self,xTest):
         self.xTest = xTest
-        xTrans2 = np.vstack((np.ones_like(self.xTest),self.xTest)).T
+        xTrans2 = np.hstack((np.ones((self.xTest.shape[0], 1)), self.xTest))
         self.yTest = np.dot(xTrans2,self.theta)
 
         return  self.yTest
 
-    def featureScaling(self,x):
+    @staticmethod
+    def featureScaling(x):
 
-        max = np.max(x)
-        min = np.min(x)
-        avg = np.average(x)
+        n,m = x.shape
+        xScaled = np.ones_like(x)
+        for j in range(m):
+            max = np.max(x[:,j])
+            min = np.min(x[:,j])
+            avg = np.average(x[:,j])
 
-        xScaled = [(xi-avg)/(max-min) for xi in x]
+            xScaled[:,j] = [(xij-avg)/(max-min) for xij in x[:,j]]
 
-        return  xScaled
+        return xScaled
 
 
 
 
 # # Test by using simulated data
 def genData(numPoints, bias, variance):
-    x = np.zeros(shape=(numPoints))
+    x = np.zeros(shape=(numPoints,2))
     y = np.zeros(shape=numPoints)
     # basically a straight line
     for i in range(0, numPoints):
         # bias feature
-        x[i] = i
+        x[i,0] = i
+        x[i,1] = i*2
         # our target variable
         y[i] = (i + bias) + random.uniform(0, 1) * variance
     return x, y
 x, y = genData(100, 25, 10)
 
-
-# Model training and predicting
-regr = LinearRegressionwithUnivariable()
-
 # Feature Scaling (After scaling, the coefficients obtained by the algorithm are different from the no scaled one, which we must use the scaled test set to test)
-# x = regr.featureScaling(x)
-
+# x = LinearRegressionwithMultiplevariable.featureScaling(x)
 xTrain = x
 xTest = x
 yTrain = y
 yTest = y
 
-theta = regr.fit(xTrain,yTrain,alpha=0.0005,delta=0.00001,numOfIteration=100000)
+# Model training and predicting
+regr = LinearRegressionwithMultiplevariable()
+theta = regr.fit(xTrain,yTrain,alpha=0.0001,epsilon=0.0001,numOfIteration=1000000)
 yTest = regr.predict(xTest)
 
 #plot the results
 import matplotlib.pyplot as plt
 
-plt.scatter(xTrain,yTrain,color = 'black')
-plt.plot(xTest,yTest,color='blue')
+plt.scatter(xTrain[:,0],yTrain,color = 'black')
+plt.plot(xTest[:,0],yTest,color='blue')
 plt.show()
 
 
