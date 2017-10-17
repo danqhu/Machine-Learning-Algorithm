@@ -3,6 +3,7 @@
 import numpy as np
 import random
 import time
+import matplotlib.pyplot as plt
 
 class LinearRegressionwithMultiplevariable():
 
@@ -18,6 +19,7 @@ class LinearRegressionwithMultiplevariable():
         self.epsilon = epsilon
         self.tempForCost = np.zeros_like(self.epsilon)
         self.numOfIteration = numOfIteration
+        self.costJhistory = np.zeros(numOfIteration)
 
         for i in range(0,self.numOfIteration):
             # Improved Version -- Added Cost Function and Delta to determine the convergence level
@@ -26,8 +28,10 @@ class LinearRegressionwithMultiplevariable():
             hypothesis = np.dot(self.xTrans,self.theta)
             loss = hypothesis - self.yTrain
             cost = np.sum(loss ** 2)/(2*self.m)
+            self.costJhistory[i] = cost
             if (abs(cost - self.tempForCost)) <= self.epsilon :
                 print('Cost changes Less than Delta %f \nIteration %d | Cost: %f' % (self.epsilon, i, cost))
+                self.costJhistory = self.costJhistory[0:i+1] # slicing the variable self.costJhistory to only obtain the not-zero values
                 break
             else:
                 self.tempForCost = cost
@@ -65,6 +69,9 @@ class LinearRegressionwithMultiplevariable():
         self.yTest = np.dot(xTrans2,self.theta)
 
         return  self.yTest
+
+
+
 
     @staticmethod
     def featureScaling(x):
@@ -106,17 +113,21 @@ yTest = y
 
 # Model training and predicting
 regr = LinearRegressionwithMultiplevariable()
-# theta = regr.fitByGradientDescent(xTrain,yTrain,alpha=0.0001,epsilon=0.000001,numOfIteration=1000000)
-theta = regr.fitByNormalEquation(xTrain,yTrain)
+theta = regr.fitByGradientDescent(xTrain,yTrain,alpha=0.0001,epsilon=0.000001,numOfIteration=1000000)
+# theta = regr.fitByNormalEquation(xTrain,yTrain)
 yTest = regr.predict(xTest)
 
 #plot the results
 import matplotlib.pyplot as plt
 
+plt.figure(1)
+plt.subplot(121)
 plt.scatter(xTrain[:,0],yTrain,color = 'black')
 plt.plot(xTest[:,0],yTest,color='blue')
-plt.show()
 
+plt.subplot(122)
+plt.plot(regr.costJhistory)
+plt.show()
 
 
 # # Test by using real data (sklearn.datasets.load_diabetes())
