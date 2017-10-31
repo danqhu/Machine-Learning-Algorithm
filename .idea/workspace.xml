@@ -18,17 +18,31 @@
       <file leaf-file-name="Logistic-Regression.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Logistic-Regression/Logistic-Regression.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1380">
-              <caret line="224" column="18" lean-forward="true" selection-start-line="224" selection-start-column="18" selection-end-line="224" selection-end-column="18" />
+            <state relative-caret-position="241">
+              <caret line="210" column="14" lean-forward="true" selection-start-line="210" selection-start-column="14" selection-end-line="210" selection-end-column="14" />
               <folding>
                 <element signature="e#23#41#0" expanded="true" />
                 <element signature="e#170#444#0" expanded="false" />
-                <element signature="e#596#2608#0" expanded="false" />
-                <element signature="e#2800#3660#0" expanded="false" />
-                <element signature="e#3842#6050#0" expanded="false" />
-                <element signature="e#6096#6350#0" expanded="false" />
-                <element signature="e#6398#6847#0" expanded="false" />
-                <element signature="e#6905#7174#0" expanded="false" />
+                <element signature="e#3851#6121#0" expanded="false" />
+                <element signature="e#6167#6421#0" expanded="false" />
+                <element signature="e#6469#6918#0" expanded="false" />
+                <element signature="e#6976#7245#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Linear-Regression-with-Multiple-Variables.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Linear-Regression-with-Multiple-Variables/Linear-Regression-with-Multiple-Variables.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="73" column="39" lean-forward="true" selection-start-line="73" selection-start-column="39" selection-end-line="73" selection-end-column="39" />
+              <folding>
+                <element signature="e#314#2215#0" expanded="false" />
+                <element signature="e#4611#5120#0" expanded="false" />
+                <element signature="e#5917#6088#0" expanded="false" />
+                <element signature="e#6147#6416#0" expanded="false" />
+                <element signature="e#6498#6800#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -57,10 +71,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="280" />
+    <option name="x" value="341" />
     <option name="y" value="23" />
-    <option name="width" value="1160" />
-    <option name="height" value="805" />
+    <option name="width" value="1099" />
+    <option name="height" value="820" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -80,6 +94,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -101,7 +116,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -202,15 +216,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="280" y="23" width="1160" height="805" extended-state="0" />
+    <frame x="341" y="23" width="1099" height="820" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15831843" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18732262" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32307693" sideWeight="0.5058997" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27323943" sideWeight="0.4941003" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27310345" sideWeight="0.4941003" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3197183" sideWeight="0.4941003" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31862068" sideWeight="0.4941003" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3774648" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -276,6 +290,11 @@
           <line>116</line>
           <option name="timeStamp" value="91" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Logistic-Regression/Logistic-Regression.py</url>
+          <line>76</line>
+          <option name="timeStamp" value="92" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -284,7 +303,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="92" />
+      <option name="time" value="93" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -296,12 +315,25 @@
           <folding>
             <element signature="e#23#41#0" expanded="true" />
             <element signature="e#170#444#0" expanded="false" />
-            <element signature="e#596#2608#0" expanded="false" />
-            <element signature="e#2800#3660#0" expanded="false" />
-            <element signature="e#3842#6050#0" expanded="false" />
-            <element signature="e#6096#6350#0" expanded="false" />
-            <element signature="e#6398#6847#0" expanded="false" />
-            <element signature="e#6905#7174#0" expanded="false" />
+            <element signature="e#3851#6121#0" expanded="false" />
+            <element signature="e#6167#6421#0" expanded="false" />
+            <element signature="e#6469#6918#0" expanded="false" />
+            <element signature="e#6976#7245#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logistic-Regression/Logistic-Regression.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#23#41#0" expanded="true" />
+            <element signature="e#170#444#0" expanded="false" />
+            <element signature="e#3851#6121#0" expanded="false" />
+            <element signature="e#6167#6421#0" expanded="false" />
+            <element signature="e#6469#6918#0" expanded="false" />
+            <element signature="e#6976#7245#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -399,31 +431,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Linear-Regression-with-Multiple-Variables/Linear-Regression-with-Multiple-Variables.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="81" column="57" lean-forward="false" selection-start-line="81" selection-start-column="25" selection-end-line="81" selection-end-column="57" />
+        <state relative-caret-position="242">
+          <caret line="73" column="39" lean-forward="true" selection-start-line="73" selection-start-column="39" selection-end-line="73" selection-end-column="39" />
           <folding>
             <element signature="e#314#2215#0" expanded="false" />
-            <element signature="e#4557#5066#0" expanded="false" />
-            <element signature="e#5863#6034#0" expanded="false" />
-            <element signature="e#6093#6362#0" expanded="false" />
-            <element signature="e#6444#6746#0" expanded="false" />
+            <element signature="e#4611#5120#0" expanded="false" />
+            <element signature="e#5917#6088#0" expanded="false" />
+            <element signature="e#6147#6416#0" expanded="false" />
+            <element signature="e#6498#6800#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Logistic-Regression/Logistic-Regression.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1380">
-          <caret line="224" column="18" lean-forward="true" selection-start-line="224" selection-start-column="18" selection-end-line="224" selection-end-column="18" />
+        <state relative-caret-position="241">
+          <caret line="210" column="14" lean-forward="true" selection-start-line="210" selection-start-column="14" selection-end-line="210" selection-end-column="14" />
           <folding>
             <element signature="e#23#41#0" expanded="true" />
             <element signature="e#170#444#0" expanded="false" />
-            <element signature="e#596#2608#0" expanded="false" />
-            <element signature="e#2800#3660#0" expanded="false" />
-            <element signature="e#3842#6050#0" expanded="false" />
-            <element signature="e#6096#6350#0" expanded="false" />
-            <element signature="e#6398#6847#0" expanded="false" />
-            <element signature="e#6905#7174#0" expanded="false" />
+            <element signature="e#3851#6121#0" expanded="false" />
+            <element signature="e#6167#6421#0" expanded="false" />
+            <element signature="e#6469#6918#0" expanded="false" />
+            <element signature="e#6976#7245#0" expanded="false" />
           </folding>
         </state>
       </provider>

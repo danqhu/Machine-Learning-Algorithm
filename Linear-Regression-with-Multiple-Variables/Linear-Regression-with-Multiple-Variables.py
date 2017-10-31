@@ -70,7 +70,7 @@ class LinearRegressionwithMultiplevariable():
             # has the ability to deal with multiple variable LR.
             hypothesis = np.dot(self.xTrans, self.theta)
             loss = hypothesis - self.yTrain
-            cost = np.sum(loss ** 2) / (2 * self.m)
+            cost = np.sum(loss ** 2) / (2 * self.m) + self.Lambda/(2*self.m)* np.sum(self.theta[1:] ** 2)
             self.costJhistory[i] = cost
             if (abs(cost - self.tempForCost)) <= self.epsilon:
                 print('Cost changes Less than Delta %f \nIteration %d | Cost: %f' % (self.epsilon, i, cost))

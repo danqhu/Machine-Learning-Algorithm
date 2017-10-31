@@ -40,7 +40,7 @@ class LogisticRegression():
             # has the ability to deal with multiple variable LR.
             hypothesis = 1 / (1 + np.exp(- np.dot(self.xTrans,self.theta)))
             loss = hypothesis - self.yTrain
-            cost = np.sum(- self.yTrain * np.log(hypothesis) - (1 - self.yTrain) * np.log(1 - hypothesis))
+            cost = - np.sum(self.yTrain * np.log(hypothesis) + (1 - self.yTrain) * np.log(1 - hypothesis)) / self.m
             self.costJhistory[i] = cost
             if (abs(cost - self.tempForCost)) <= self.epsilon :
                 print('Cost changes Less than Delta %f \nIteration %d | Cost: %f' % (self.epsilon, i, cost))
@@ -98,7 +98,7 @@ class LogisticRegression():
             # has the ability to deal with multiple variable LR.
             hypothesis = 1 / (1 + np.exp(- np.dot(self.xTrans,self.theta)))
             loss = hypothesis - self.yTrain
-            cost = np.sum(- self.yTrain * np.log(hypothesis) - (1 - self.yTrain) * np.log(1 - hypothesis))
+            cost = - np.sum(self.yTrain * np.log(hypothesis) + (1 - self.yTrain) * np.log(1 - hypothesis))/ self.m + self.Lambda/(2*self.m)* np.sum(self.theta[1:] ** 2)
             self.costJhistory[i] = cost
             if (abs(cost - self.tempForCost)) <= self.epsilon :
                 print('Cost changes Less than Delta %f \nIteration %d | Cost: %f' % (self.epsilon, i, cost))
@@ -219,7 +219,7 @@ z = 1
 
 # Model training and predicting
 regr = LogisticRegression()
-theta = regr.multipleFitByGradientDescent(xTrain,yTrain,alpha=0.01,epsilon=0.00001,Lambda=0.01,numOfIteration=500000,IsRegularization=True)
+theta = regr.multipleFitByGradientDescent(xTrain,yTrain,alpha=0.01,epsilon=0.000001,Lambda=1,numOfIteration=500000,IsRegularization=True)
 yResult = regr.multiplePredict(xTest)
 
 # Confusion matrix
