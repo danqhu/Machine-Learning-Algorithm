@@ -47,6 +47,49 @@ class LinearRegressionwithMultiplevariable():
 
         return self.theta
 
+    def fitByGradientDescentWithRegularization(self, xTrain, yTrain, theta = None , alpha = 0.0005, epsilon = 0.00000000000001, Lambda = 100, numOfIteration = 100000):
+        startTime = time.process_time()
+        self.xTrain = xTrain  # variables
+        self.yTrain = yTrain[:, np.newaxis]  # target
+        self.xTrans = np.hstack((np.ones((self.xTrain.shape[0], 1)), self.xTrain))
+        self.m = self.xTrans.shape[0]
+
+        self.theta = np.zeros((self.xTrans.shape[1], 1)) if theta is None else theta
+        self.alpha = alpha
+        self.epsilon = epsilon
+        self.Lambda = Lambda
+        self.regularization = np.ones((self.xTrans.shape[1],1))*(1-self.alpha*self.Lambda/self.m)
+        self.regularization[0,0] = 1
+        self.tempForCost = np.zeros_like(self.epsilon)
+        self.numOfIteration = numOfIteration
+        self.costJhistory = np.zeros(numOfIteration)
+
+        for i in range(0, self.numOfIteration):
+            # Improved Version -- Added Cost Function and Delta to determine the convergence level
+            # Actually, compared with the Univariable LR, we can notice that the improved version of gradient descent algorithm
+            # has the ability to deal with multiple variable LR.
+            hypothesis = np.dot(self.xTrans, self.theta)
+            loss = hypothesis - self.yTrain
+            cost = np.sum(loss ** 2) / (2 * self.m)
+            self.costJhistory[i] = cost
+            if (abs(cost - self.tempForCost)) <= self.epsilon:
+                print('Cost changes Less than Delta %f \nIteration %d | Cost: %f' % (self.epsilon, i, cost))
+                self.costJhistory = self.costJhistory[0:i + 1]  # slicing the variable self.costJhistory to only obtain the not-zero values
+                break
+            else:
+                self.tempForCost = cost
+            gradient = np.dot(self.xTrans.T, loss) / self.m
+            self.theta = self.theta * self.regularization - self.alpha * gradient
+            if (i == numOfIteration):
+                print('The number of iteration achieved the %d \nIteration %d | Cost: %f' % (i, cost))
+
+        print('\nCoefficients:')
+        print(self.theta)
+        endTime = time.process_time() - startTime
+        print('\nProcessing Time: %f' % endTime)
+
+        return self.theta
+
     def fitByNormalEquation(self,xTrain, yTrain):
         startTime = time.process_time()
         self.xTrain = xTrain  # variables
@@ -61,7 +104,21 @@ class LinearRegressionwithMultiplevariable():
 
         return self.theta
 
+    def fitByNormalEquationWithRegularization(self,xTrain, yTrain, Lambda):
+        startTime = time.process_time()
+        self.xTrain = xTrain  # variables
+        self.yTrain = yTrain[:, np.newaxis]  # target
+        self.xTrans = np.hstack((np.ones((self.xTrain.shape[0], 1)), self.xTrain))
+        self.Lambda = Lambda
+        self.regularizationM = np.eye(self.xTrans.shape[1])
+        self.regularizationM[0,0] = 0
+        self.theta = np.dot(np.dot(np.linalg.pinv(np.dot(self.xTrans.T,self.xTrans) + self.Lambda * self.regularizationM),self.xTrans.T),self.yTrain)
+        print('\nCoefficients:')
+        print(self.theta)
+        endTime = time.process_time() - startTime
+        print('\nProcessing Time: %f' % endTime)
 
+        return self.theta
 
     def predict(self,xTest):
         self.xTest = xTest
@@ -113,8 +170,10 @@ yTest = y
 
 # Model training and predicting
 regr = LinearRegressionwithMultiplevariable()
-theta = regr.fitByGradientDescent(xTrain,yTrain,alpha=0.0001,epsilon=0.000001,numOfIteration=1000000)
+# theta = regr.fitByGradientDescent(xTrain,yTrain,alpha=0.0001,epsilon=0.000001,numOfIteration=1000000)
+# theta = regr.fitByGradientDescentWithRegularization(xTrain,yTrain,alpha=0.0001,epsilon=0.000001,Lambda=1000,numOfIteration=1000000)
 # theta = regr.fitByNormalEquation(xTrain,yTrain)
+theta = regr.fitByNormalEquationWithRegularization(xTrain,yTrain,100)
 yTest = regr.predict(xTest)
 
 #plot the results

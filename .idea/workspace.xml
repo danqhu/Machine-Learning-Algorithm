@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7e0530c9-c553-408c-a0f5-a4b1b0b73213" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Linear-Regression-with-Multiple-Variables/Linear-Regression-with-Multiple-Variables.py" afterPath="$PROJECT_DIR$/Linear-Regression-with-Multiple-Variables/Linear-Regression-with-Multiple-Variables.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Logistic-Regression/Logistic-Regression.py" afterPath="$PROJECT_DIR$/Logistic-Regression/Logistic-Regression.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,14 +14,21 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="Logistic-Regression.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Logistic-Regression/Logistic-Regression.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="183" column="0" lean-forward="false" selection-start-line="183" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
+            <state relative-caret-position="1380">
+              <caret line="224" column="18" lean-forward="true" selection-start-line="224" selection-start-column="18" selection-end-line="224" selection-end-column="18" />
               <folding>
                 <element signature="e#23#41#0" expanded="true" />
+                <element signature="e#170#444#0" expanded="false" />
+                <element signature="e#596#2608#0" expanded="false" />
+                <element signature="e#2800#3660#0" expanded="false" />
+                <element signature="e#3842#6050#0" expanded="false" />
+                <element signature="e#6096#6350#0" expanded="false" />
+                <element signature="e#6398#6847#0" expanded="false" />
+                <element signature="e#6905#7174#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -42,17 +50,17 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Linear-Regression-with-One-Variable/Linear-Regression-with-One-Variable.py" />
-        <option value="$PROJECT_DIR$/Linear-Regression-with-Multiple-Variables/Linear-Regression-with-Multiple-Variables.py" />
         <option value="$PROJECT_DIR$/Logistics-Regression/Logistic-Regression.py" />
+        <option value="$PROJECT_DIR$/Linear-Regression-with-Multiple-Variables/Linear-Regression-with-Multiple-Variables.py" />
         <option value="$PROJECT_DIR$/Logistic-Regression/Logistic-Regression.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="171" />
+    <option name="x" value="280" />
     <option name="y" value="23" />
     <option name="width" value="1160" />
-    <option name="height" value="807" />
+    <option name="height" value="805" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -72,7 +80,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -95,6 +102,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -194,18 +202,18 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="171" y="23" width="1160" height="807" extended-state="0" />
+    <frame x="280" y="23" width="1160" height="805" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1529517" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15831843" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32307693" sideWeight="0.5058997" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27412587" sideWeight="0.4941003" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27323943" sideWeight="0.4941003" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32027972" sideWeight="0.4941003" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3197183" sideWeight="0.4941003" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37762237" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3774648" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45796064" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -230,23 +238,43 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Logistic-Regression/Logistic-Regression.py</url>
-          <line>135</line>
+          <line>181</line>
           <option name="timeStamp" value="53" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Logistic-Regression/Logistic-Regression.py</url>
-          <line>130</line>
+          <line>176</line>
           <option name="timeStamp" value="64" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Logistic-Regression/Logistic-Regression.py</url>
-          <line>177</line>
+          <line>222</line>
           <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Linear-Regression-with-Multiple-Variables/Linear-Regression-with-Multiple-Variables.py</url>
+          <line>64</line>
+          <option name="timeStamp" value="87" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Linear-Regression-with-Multiple-Variables/Linear-Regression-with-Multiple-Variables.py</url>
+          <line>88</line>
+          <option name="timeStamp" value="88" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Linear-Regression-with-Multiple-Variables/Linear-Regression-with-Multiple-Variables.py</url>
+          <line>114</line>
+          <option name="timeStamp" value="89" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Logistic-Regression/Logistic-Regression.py</url>
           <line>92</line>
-          <option name="timeStamp" value="86" />
+          <option name="timeStamp" value="90" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Logistic-Regression/Logistic-Regression.py</url>
+          <line>116</line>
+          <option name="timeStamp" value="91" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -256,11 +284,28 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="87" />
+      <option name="time" value="92" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Logistic-Regression/Logistic-Regression.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#23#41#0" expanded="true" />
+            <element signature="e#170#444#0" expanded="false" />
+            <element signature="e#596#2608#0" expanded="false" />
+            <element signature="e#2800#3660#0" expanded="false" />
+            <element signature="e#3842#6050#0" expanded="false" />
+            <element signature="e#6096#6350#0" expanded="false" />
+            <element signature="e#6398#6847#0" expanded="false" />
+            <element signature="e#6905#7174#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Linear-Regression-with-Multiple-Variables/Linear-Regression-with-Multiple-Variables.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
@@ -345,27 +390,40 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Logistics-Regression/Logistic-Regression.py" />
-    <entry file="file://$PROJECT_DIR$/Linear-Regression-with-Multiple-Variables/Linear-Regression-with-Multiple-Variables.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="623">
-          <caret line="89" column="0" lean-forward="true" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/codecs.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="94">
           <caret line="308" column="0" lean-forward="false" selection-start-line="308" selection-start-column="0" selection-end-line="308" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Linear-Regression-with-Multiple-Variables/Linear-Regression-with-Multiple-Variables.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="81" column="57" lean-forward="false" selection-start-line="81" selection-start-column="25" selection-end-line="81" selection-end-column="57" />
+          <folding>
+            <element signature="e#314#2215#0" expanded="false" />
+            <element signature="e#4557#5066#0" expanded="false" />
+            <element signature="e#5863#6034#0" expanded="false" />
+            <element signature="e#6093#6362#0" expanded="false" />
+            <element signature="e#6444#6746#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Logistic-Regression/Logistic-Regression.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="183" column="0" lean-forward="false" selection-start-line="183" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
+        <state relative-caret-position="1380">
+          <caret line="224" column="18" lean-forward="true" selection-start-line="224" selection-start-column="18" selection-end-line="224" selection-end-column="18" />
           <folding>
             <element signature="e#23#41#0" expanded="true" />
+            <element signature="e#170#444#0" expanded="false" />
+            <element signature="e#596#2608#0" expanded="false" />
+            <element signature="e#2800#3660#0" expanded="false" />
+            <element signature="e#3842#6050#0" expanded="false" />
+            <element signature="e#6096#6350#0" expanded="false" />
+            <element signature="e#6398#6847#0" expanded="false" />
+            <element signature="e#6905#7174#0" expanded="false" />
           </folding>
         </state>
       </provider>

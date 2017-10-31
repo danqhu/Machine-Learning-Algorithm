@@ -7,6 +7,18 @@ import matplotlib.pyplot as plt
 
 class LogisticRegression():
 
+    def initialVariables(self):
+        self.xTrain = None
+        self.yTrain = None
+        self.xTrans = None
+        self.m = None
+        self.theta = None
+        self.alpha = None
+        self.epsilon = None
+        self.tempForCost = None
+        self.numOfIteration = None
+        self.costJhistory = None
+
     def binaryFitByGradientDescent(self, xTrain, yTrain, theta = None , alpha = 0.0005, epsilon = 0.00000000000001, numOfIteration = 100000):
         startTime = time.process_time()
         self.initialVariables()
@@ -48,27 +60,63 @@ class LogisticRegression():
 
         return self.theta
 
-    def multipleFitByGradientDescent(self, xTrain, yTrain, theta = None , alpha = 0.0005, epsilon = 0.00000000000001, numOfIteration = 100000):
+    def multipleFitByGradientDescent(self, xTrain, yTrain, theta = None , alpha = 0.0005, epsilon = 0.00000000000001, Lambda = 1, numOfIteration = 100000, IsRegularization = False):
         self.yClass = np.unique(yTrain)
         self.thetas = np.zeros((xTrain.shape[1]+1, self.yClass.shape[0])) if theta is None else theta
+        if IsRegularization == False:
+            for i in range(self.yClass.shape[0]):
+                yTrainTemp = np.array([1 if y == self.yClass[i] else 0 for y in yTrain])
+                self.thetas[:,i] = self.binaryFitByGradientDescent(xTrain, yTrainTemp, alpha = alpha, epsilon = epsilon, numOfIteration = numOfIteration)[:,0]
+                z = 1
+        else:
+            for i in range(self.yClass.shape[0]):
+                yTrainTemp = np.array([1 if y == self.yClass[i] else 0 for y in yTrain])
+                self.thetas[:,i] = self.binaryFitByGradientDescentWithRegularization(xTrain, yTrainTemp, alpha = alpha, epsilon = epsilon, Lambda = Lambda, numOfIteration = numOfIteration)[:,0]
+                z = 1
 
-        for i in range(self.yClass.shape[0]):
-            yTrainTemp = np.array([1 if y == self.yClass[i] else 0 for y in yTrain])
-            self.thetas[:,i] = self.binaryFitByGradientDescent(xTrain, yTrainTemp, alpha = alpha, epsilon = epsilon, numOfIteration = numOfIteration)[:,0]
-            z = 1
+    def binaryFitByGradientDescentWithRegularization(self, xTrain, yTrain, theta = None , alpha = 0.0005, epsilon = 0.00000000000001, Lambda = 1, numOfIteration = 100000):
+        startTime = time.process_time()
+        self.initialVariables()
+        self.xTrain = xTrain # variables
+        self.yTrain = yTrain[:,np.newaxis] # target
+        self.xTrans = np.hstack((np.ones((self.xTrain.shape[0],1)),self.xTrain))
+        self.m = self.xTrans.shape[0]
 
+        self.theta = np.zeros((self.xTrans.shape[1],1)) if theta is None else theta
+        self.alpha = alpha
+        self.epsilon = epsilon
+        self.Lambda = Lambda
+        self.regularization = np.ones((self.xTrans.shape[1], 1)) * (1 - self.alpha * self.Lambda / self.m)
+        self.regularization[0, 0] = 1
+        self.tempForCost = np.zeros_like(self.epsilon)
+        self.numOfIteration = numOfIteration
+        self.costJhistory = np.zeros(numOfIteration)
 
-    def initialVariables(self):
-        self.xTrain = None
-        self.yTrain = None
-        self.xTrans = None
-        self.m = None
-        self.theta = None
-        self.alpha = None
-        self.epsilon = None
-        self.tempForCost = None
-        self.numOfIteration = None
-        self.costJhistory = None
+        for i in range(0,self.numOfIteration):
+            # Improved Version -- Added Cost Function and Delta to determine the convergence level
+            # Actually, compared with the Univariable LR, we can notice that the improved version of gradient descent algorithm
+            # has the ability to deal with multiple variable LR.
+            hypothesis = 1 / (1 + np.exp(- np.dot(self.xTrans,self.theta)))
+            loss = hypothesis - self.yTrain
+            cost = np.sum(- self.yTrain * np.log(hypothesis) - (1 - self.yTrain) * np.log(1 - hypothesis))
+            self.costJhistory[i] = cost
+            if (abs(cost - self.tempForCost)) <= self.epsilon :
+                print('Cost changes Less than Delta %f \nIteration %d | Cost: %f' % (self.epsilon, i, cost))
+                self.costJhistory = self.costJhistory[0:i+1] # slicing the variable self.costJhistory to only obtain the not-zero values
+                break
+            else:
+                self.tempForCost = cost
+            gradient = np.dot(self.xTrans.T,loss)/self.m
+            self.theta = self.theta * self.regularization - self.alpha * gradient
+            if (i == numOfIteration):
+                print('The number of iteration achieved the %d \nIteration %d | Cost: %f' % (i, cost))
+
+        print('\nCoefficients:')
+        print(self.theta)
+        endTime = time.process_time() - startTime
+        print('\nProcessing Time: %f' % endTime)
+
+        return self.theta
 
     def binaryPredict(self,xTest):
 
@@ -91,8 +139,6 @@ class LogisticRegression():
         self.yTest = [self.yClass[i] for i in self.yResult]
 
         return  self.yTest
-
-
 
 
 
@@ -132,7 +178,7 @@ class LogisticRegression():
 #
 # # Model training and predicting
 # regr = LogisticRegression()
-# theta = regr.binaryFitByGradientDescent(xTrain,yTrain,alpha=0.5,epsilon=0.00001,numOfIteration=500000)
+# theta = regr.binaryFitByGradientDescentWithRegularization(xTrain,yTrain,alpha=0.5,epsilon=0.00001,Lambda=0.01,numOfIteration=500000)
 # yResult = regr.binaryPredict(xTest)
 #
 # # Confusion matrix
@@ -147,7 +193,6 @@ class LogisticRegression():
 # # plt.scatter(xTrain,yTrain,color = 'black')
 # # plt.plot(xTest,yTest,color='blue')
 # # plt.show()
-
 
 
 
@@ -174,7 +219,7 @@ z = 1
 
 # Model training and predicting
 regr = LogisticRegression()
-theta = regr.multipleFitByGradientDescent(xTrain,yTrain,alpha=0.01,epsilon=0.00001,numOfIteration=500000)
+theta = regr.multipleFitByGradientDescent(xTrain,yTrain,alpha=0.01,epsilon=0.00001,Lambda=0.01,numOfIteration=500000,IsRegularization=True)
 yResult = regr.multiplePredict(xTest)
 
 # Confusion matrix
