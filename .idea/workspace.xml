@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e0530c9-c553-408c-a0f5-a4b1b0b73213" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Neural-Network/Neural-Network.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Linear-Regression-with-Multiple-Variables/Linear-Regression-with-Multiple-Variables.py" afterPath="$PROJECT_DIR$/Linear-Regression-with-Multiple-Variables/Linear-Regression-with-Multiple-Variables.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Logistic-Regression/Logistic-Regression.py" afterPath="$PROJECT_DIR$/Logistic-Regression/Logistic-Regression.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,34 +15,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Logistic-Regression.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Logistic-Regression/Logistic-Regression.py">
+      <file leaf-file-name="Neural-Network.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Neural-Network/Neural-Network.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="210" column="14" lean-forward="true" selection-start-line="210" selection-start-column="14" selection-end-line="210" selection-end-column="14" />
+            <state relative-caret-position="197">
+              <caret line="50" column="42" lean-forward="false" selection-start-line="50" selection-start-column="42" selection-end-line="50" selection-end-column="42" />
               <folding>
-                <element signature="e#23#41#0" expanded="true" />
-                <element signature="e#170#444#0" expanded="false" />
-                <element signature="e#3851#6121#0" expanded="false" />
-                <element signature="e#6167#6421#0" expanded="false" />
-                <element signature="e#6469#6918#0" expanded="false" />
-                <element signature="e#6976#7245#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Linear-Regression-with-Multiple-Variables.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Linear-Regression-with-Multiple-Variables/Linear-Regression-with-Multiple-Variables.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="73" column="39" lean-forward="true" selection-start-line="73" selection-start-column="39" selection-end-line="73" selection-end-column="39" />
-              <folding>
-                <element signature="e#314#2215#0" expanded="false" />
-                <element signature="e#4611#5120#0" expanded="false" />
-                <element signature="e#5917#6088#0" expanded="false" />
-                <element signature="e#6147#6416#0" expanded="false" />
-                <element signature="e#6498#6800#0" expanded="false" />
+                <element signature="e#1#19#0" expanded="true" />
+                <element signature="e#4377#4405#0" expanded="false" />
+                <element signature="e#4448#4493#0" expanded="false" />
+                <element signature="e#5062#5405#0" expanded="false" />
+                <element signature="e#5798#5966#0" expanded="false" />
+                <element signature="e#6008#6621#0" expanded="false" />
+                <element signature="e#6658#6785#0" expanded="false" />
+                <element signature="e#6841#7608#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -57,6 +43,12 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>copy</find>
+      <find>yClass</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -67,14 +59,15 @@
         <option value="$PROJECT_DIR$/Logistics-Regression/Logistic-Regression.py" />
         <option value="$PROJECT_DIR$/Linear-Regression-with-Multiple-Variables/Linear-Regression-with-Multiple-Variables.py" />
         <option value="$PROJECT_DIR$/Logistic-Regression/Logistic-Regression.py" />
+        <option value="$PROJECT_DIR$/Neural-Network/Neural-Network.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="341" />
-    <option name="y" value="23" />
-    <option name="width" value="1099" />
-    <option name="height" value="820" />
+    <option name="x" value="41" />
+    <option name="y" value="24" />
+    <option name="width" value="1398" />
+    <option name="height" value="813" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -105,12 +98,17 @@
             <path>
               <item name="Machine-Learning-Algorithm" type="b2602c69:ProjectViewProjectNode" />
               <item name="Machine-Learning-Algorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="Linear-Regression-with-Multiple-Variables" type="462c0819:PsiDirectoryNode" />
+              <item name="Linear-Regression-with-One-Variable" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Machine-Learning-Algorithm" type="b2602c69:ProjectViewProjectNode" />
               <item name="Machine-Learning-Algorithm" type="462c0819:PsiDirectoryNode" />
               <item name="Logistic-Regression" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Machine-Learning-Algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Machine-Learning-Algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="Neural-Network" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -134,7 +132,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Logistic-Regression">
+  <component name="RunManager" selected="Python.Neural-Network">
     <configuration name="Linear-Regression-with-Multiple-Variables" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -186,16 +184,35 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <list size="3">
+    <configuration name="Neural-Network" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Neural-Network" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Machine-Learning-Algorithm" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Neural-Network/Neural-Network.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Python.Linear-Regression-with-One-Variable" />
       <item index="1" class="java.lang.String" itemvalue="Python.Linear-Regression-with-Multiple-Variables" />
       <item index="2" class="java.lang.String" itemvalue="Python.Logistic-Regression" />
+      <item index="3" class="java.lang.String" itemvalue="Python.Neural-Network" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Python.Logistic-Regression" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Linear-Regression-with-Multiple-Variables" />
-        <item index="2" class="java.lang.String" itemvalue="Python.Linear-Regression-with-One-Variable" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Python.Neural-Network" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Logistic-Regression" />
+        <item index="2" class="java.lang.String" itemvalue="Python.Linear-Regression-with-Multiple-Variables" />
+        <item index="3" class="java.lang.String" itemvalue="Python.Linear-Regression-with-One-Variable" />
       </list>
     </recent_temporary>
   </component>
@@ -216,20 +233,20 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="341" y="23" width="1099" height="820" extended-state="0" />
+    <frame x="41" y="24" width="1398" height="813" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18732262" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.057522126" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32307693" sideWeight="0.5058997" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27310345" sideWeight="0.4941003" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4303621" sideWeight="0.4941003" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31862068" sideWeight="0.4941003" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31337047" sideWeight="0.4941003" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3774648" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37743732" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45796064" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.66519177" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -282,18 +299,38 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Logistic-Regression/Logistic-Regression.py</url>
-          <line>92</line>
-          <option name="timeStamp" value="90" />
+          <line>32</line>
+          <option name="timeStamp" value="95" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Logistic-Regression/Logistic-Regression.py</url>
-          <line>116</line>
-          <option name="timeStamp" value="91" />
+          <line>134</line>
+          <option name="timeStamp" value="123" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Logistic-Regression/Logistic-Regression.py</url>
-          <line>76</line>
-          <option name="timeStamp" value="92" />
+          <url>file://$PROJECT_DIR$/Neural-Network/Neural-Network.py</url>
+          <line>252</line>
+          <option name="timeStamp" value="128" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Neural-Network/Neural-Network.py</url>
+          <line>224</line>
+          <option name="timeStamp" value="155" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Neural-Network/Neural-Network.py</url>
+          <line>221</line>
+          <option name="timeStamp" value="156" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Neural-Network/Neural-Network.py</url>
+          <line>262</line>
+          <option name="timeStamp" value="158" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Neural-Network/Neural-Network.py</url>
+          <line>277</line>
+          <option name="timeStamp" value="159" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -303,7 +340,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="93" />
+      <option name="time" value="160" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -315,10 +352,25 @@
           <folding>
             <element signature="e#23#41#0" expanded="true" />
             <element signature="e#170#444#0" expanded="false" />
+            <element signature="e#596#2617#0" expanded="false" />
+            <element signature="e#1228#2431#0" expanded="false" />
+            <element signature="e#2809#3669#0" expanded="false" />
             <element signature="e#3851#6121#0" expanded="false" />
             <element signature="e#6167#6421#0" expanded="false" />
-            <element signature="e#6469#6918#0" expanded="false" />
-            <element signature="e#6976#7245#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Linear-Regression-with-Multiple-Variables/Linear-Regression-with-Multiple-Variables.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="73" column="39" lean-forward="false" selection-start-line="73" selection-start-column="39" selection-end-line="73" selection-end-column="39" />
+          <folding>
+            <element signature="e#314#2215#0" expanded="false" />
+            <element signature="e#4611#5120#0" expanded="false" />
+            <element signature="e#5917#6088#0" expanded="false" />
+            <element signature="e#6147#6416#0" expanded="false" />
+            <element signature="e#6498#6800#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -330,10 +382,57 @@
           <folding>
             <element signature="e#23#41#0" expanded="true" />
             <element signature="e#170#444#0" expanded="false" />
+            <element signature="e#596#2617#0" expanded="false" />
+            <element signature="e#1228#2431#0" expanded="false" />
+            <element signature="e#2809#3669#0" expanded="false" />
             <element signature="e#3851#6121#0" expanded="false" />
             <element signature="e#6167#6421#0" expanded="false" />
-            <element signature="e#6469#6918#0" expanded="false" />
-            <element signature="e#6976#7245#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Linear-Regression-with-Multiple-Variables/Linear-Regression-with-Multiple-Variables.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="73" column="39" lean-forward="true" selection-start-line="73" selection-start-column="39" selection-end-line="73" selection-end-column="39" />
+          <folding>
+            <element signature="e#314#2215#0" expanded="false" />
+            <element signature="e#4611#5120#0" expanded="false" />
+            <element signature="e#5917#6088#0" expanded="false" />
+            <element signature="e#6147#6416#0" expanded="false" />
+            <element signature="e#6498#6800#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logistic-Regression/Logistic-Regression.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#23#41#0" expanded="true" />
+            <element signature="e#170#444#0" expanded="false" />
+            <element signature="e#596#2617#0" expanded="false" />
+            <element signature="e#1228#2431#0" expanded="false" />
+            <element signature="e#2809#3669#0" expanded="false" />
+            <element signature="e#3851#6121#0" expanded="false" />
+            <element signature="e#6167#6421#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logistic-Regression/Logistic-Regression.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#23#41#0" expanded="true" />
+            <element signature="e#170#444#0" expanded="false" />
+            <element signature="e#596#2617#0" expanded="false" />
+            <element signature="e#1228#2431#0" expanded="false" />
+            <element signature="e#2809#3669#0" expanded="false" />
+            <element signature="e#3851#6121#0" expanded="false" />
+            <element signature="e#6167#6421#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -404,16 +503,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Linear-Regression-with-One-Variable/Linear-Regression-with-One-Variable.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-874">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <element signature="e#42#60#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/matplotlib/axes/_base.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -422,17 +511,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Logistics-Regression/Logistic-Regression.py" />
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="308" column="0" lean-forward="false" selection-start-line="308" selection-start-column="0" selection-end-line="308" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Linear-Regression-with-Multiple-Variables/Linear-Regression-with-Multiple-Variables.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
-          <caret line="73" column="39" lean-forward="true" selection-start-line="73" selection-start-column="39" selection-end-line="73" selection-end-column="39" />
+          <caret line="73" column="39" lean-forward="false" selection-start-line="73" selection-start-column="39" selection-end-line="73" selection-end-column="39" />
           <folding>
             <element signature="e#314#2215#0" expanded="false" />
             <element signature="e#4611#5120#0" expanded="false" />
@@ -443,17 +525,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Linear-Regression-with-One-Variable/Linear-Regression-with-One-Variable.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-251">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="e#42#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Logistic-Regression/Logistic-Regression.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="210" column="14" lean-forward="true" selection-start-line="210" selection-start-column="14" selection-end-line="210" selection-end-column="14" />
+        <state relative-caret-position="1399">
+          <caret line="207" column="0" lean-forward="true" selection-start-line="207" selection-start-column="0" selection-end-line="207" selection-end-column="0" />
           <folding>
             <element signature="e#23#41#0" expanded="true" />
             <element signature="e#170#444#0" expanded="false" />
+            <element signature="e#596#2617#0" expanded="false" />
+            <element signature="e#1228#2431#0" expanded="false" />
+            <element signature="e#2809#3669#0" expanded="false" />
             <element signature="e#3851#6121#0" expanded="false" />
             <element signature="e#6167#6421#0" expanded="false" />
-            <element signature="e#6469#6918#0" expanded="false" />
-            <element signature="e#6976#7245#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="308" column="0" lean-forward="false" selection-start-line="308" selection-start-column="0" selection-end-line="308" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Neural-Network/Neural-Network.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="50" column="42" lean-forward="false" selection-start-line="50" selection-start-column="42" selection-end-line="50" selection-end-column="42" />
+          <folding>
+            <element signature="e#1#19#0" expanded="true" />
+            <element signature="e#4377#4405#0" expanded="false" />
+            <element signature="e#4448#4493#0" expanded="false" />
+            <element signature="e#5062#5405#0" expanded="false" />
+            <element signature="e#5798#5966#0" expanded="false" />
+            <element signature="e#6008#6621#0" expanded="false" />
+            <element signature="e#6658#6785#0" expanded="false" />
+            <element signature="e#6841#7608#0" expanded="false" />
           </folding>
         </state>
       </provider>
