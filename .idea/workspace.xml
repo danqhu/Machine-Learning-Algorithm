@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e0530c9-c553-408c-a0f5-a4b1b0b73213" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K-Means/K-Means.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Principle-Component-Analysis/Principle-Component-Analysis.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/K-Means/K-Means.py" afterPath="$PROJECT_DIR$/K-Means/K-Means.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,11 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="K-Means.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/K-Means/K-Means.py">
+      <file leaf-file-name="Principle-Component-Analysis.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Principle-Component-Analysis/Principle-Component-Analysis.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="116" lean-forward="false" selection-start-line="8" selection-start-column="116" selection-end-line="8" selection-end-column="116" />
+            <state relative-caret-position="168">
+              <caret line="17" column="68" lean-forward="false" selection-start-line="17" selection-start-column="68" selection-end-line="17" selection-end-column="68" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -53,12 +54,13 @@
         <option value="$PROJECT_DIR$/Logistic-Regression/Logistic-Regression.py" />
         <option value="$PROJECT_DIR$/Neural-Network/Neural-Network.py" />
         <option value="$PROJECT_DIR$/K-Means/K-Means.py" />
+        <option value="$PROJECT_DIR$/Principle-Component-Analysis/Principle-Component-Analysis.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="213" />
-    <option name="y" value="23" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="257" />
+    <option name="y" value="28" />
     <option name="width" value="1302" />
     <option name="height" value="805" />
   </component>
@@ -110,7 +112,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.K-Means">
+  <component name="RunManager" selected="Python.Principle-Component-Analysis">
     <configuration name="K-Means" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -141,23 +143,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Machine-Learning-Algorithm" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Linear-Regression-with-Multiple-Variables/Linear-Regression-with-Multiple-Variables.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="Linear-Regression-with-One-Variable" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Linear-Regression-with-One-Variable" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Machine-Learning-Algorithm" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Linear-Regression-with-One-Variable/Linear-Regression-with-One-Variable.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -196,20 +181,37 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
+    <configuration name="Principle-Component-Analysis" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Principle-Component-Analysis" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Machine-Learning-Algorithm" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Principle-Component-Analysis/Principle-Component-Analysis.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.Linear-Regression-with-One-Variable" />
-      <item index="1" class="java.lang.String" itemvalue="Python.Linear-Regression-with-Multiple-Variables" />
-      <item index="2" class="java.lang.String" itemvalue="Python.Logistic-Regression" />
-      <item index="3" class="java.lang.String" itemvalue="Python.Neural-Network" />
-      <item index="4" class="java.lang.String" itemvalue="Python.K-Means" />
+      <item index="0" class="java.lang.String" itemvalue="Python.Linear-Regression-with-Multiple-Variables" />
+      <item index="1" class="java.lang.String" itemvalue="Python.Logistic-Regression" />
+      <item index="2" class="java.lang.String" itemvalue="Python.Neural-Network" />
+      <item index="3" class="java.lang.String" itemvalue="Python.K-Means" />
+      <item index="4" class="java.lang.String" itemvalue="Python.Principle-Component-Analysis" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.K-Means" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Neural-Network" />
-        <item index="2" class="java.lang.String" itemvalue="Python.Logistic-Regression" />
-        <item index="3" class="java.lang.String" itemvalue="Python.Linear-Regression-with-Multiple-Variables" />
-        <item index="4" class="java.lang.String" itemvalue="Python.Linear-Regression-with-One-Variable" />
+        <item index="0" class="java.lang.String" itemvalue="Python.Principle-Component-Analysis" />
+        <item index="1" class="java.lang.String" itemvalue="Python.K-Means" />
+        <item index="2" class="java.lang.String" itemvalue="Python.Neural-Network" />
+        <item index="3" class="java.lang.String" itemvalue="Python.Logistic-Regression" />
+        <item index="4" class="java.lang.String" itemvalue="Python.Linear-Regression-with-Multiple-Variables" />
       </list>
     </recent_temporary>
   </component>
@@ -230,13 +232,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="213" y="23" width="1302" height="805" extended-state="1" />
+    <frame x="257" y="28" width="1302" height="805" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16031747" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32307693" sideWeight="0.5058997" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42957747" sideWeight="0.4941003" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42957747" sideWeight="0.4941003" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3112676" sideWeight="0.4941003" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -336,18 +338,28 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/K-Means/K-Means.py</url>
-          <line>10</line>
-          <option name="timeStamp" value="185" />
+          <line>45</line>
+          <option name="timeStamp" value="191" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/K-Means/K-Means.py</url>
-          <line>19</line>
-          <option name="timeStamp" value="186" />
+          <url>file://$PROJECT_DIR$/Principle-Component-Analysis/Principle-Component-Analysis.py</url>
+          <line>86</line>
+          <option name="timeStamp" value="201" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/K-Means/K-Means.py</url>
-          <line>63</line>
-          <option name="timeStamp" value="187" />
+          <url>file://$PROJECT_DIR$/Principle-Component-Analysis/Principle-Component-Analysis.py</url>
+          <line>47</line>
+          <option name="timeStamp" value="202" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Principle-Component-Analysis/Principle-Component-Analysis.py</url>
+          <line>42</line>
+          <option name="timeStamp" value="204" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Principle-Component-Analysis/Principle-Component-Analysis.py</url>
+          <line>34</line>
+          <option name="timeStamp" value="205" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -357,7 +369,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="191" />
+      <option name="time" value="206" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -540,13 +552,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/matplotlib/axes/_base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="406" column="0" lean-forward="false" selection-start-line="406" selection-start-column="0" selection-end-line="406" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Logistics-Regression/Logistic-Regression.py" />
     <entry file="file://$PROJECT_DIR$/Linear-Regression-with-Multiple-Variables/Linear-Regression-with-Multiple-Variables.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -608,6 +613,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/K-Means/K-Means.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/matplotlib/axes/_base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="638" column="0" lean-forward="false" selection-start-line="638" selection-start-column="0" selection-end-line="638" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/codecs.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -616,10 +639,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/K-Means/K-Means.py">
+    <entry file="file://$PROJECT_DIR$/Principle-Component-Analysis/Principle-Component-Analysis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="116" lean-forward="false" selection-start-line="8" selection-start-column="116" selection-end-line="8" selection-end-column="116" />
+        <state relative-caret-position="168">
+          <caret line="17" column="68" lean-forward="false" selection-start-line="17" selection-start-column="68" selection-end-line="17" selection-end-column="68" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>

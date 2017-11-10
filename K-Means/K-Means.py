@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 
 class KMeans():
 
-    def fit(self, xTrain, numOfCluster, numOfIteration = 1000, epsilon = 0.00000001, numOfRandomInitialization = 100):
+    def fit(self, xTrain, numOfCluster, numOfIteration = 1000, epsilon = 0.00000001, numOfRandomInitialization = 10):
 
         self.initialization(xTrain, numOfCluster, numOfIteration, epsilon, numOfRandomInitialization)
 
