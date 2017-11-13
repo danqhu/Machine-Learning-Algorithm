@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e0530c9-c553-408c-a0f5-a4b1b0b73213" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Collaborative-Filtering-For-Recommender-System/Collaboratice-Filtering.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Gaussian-Distribution/Gaussian-Distribution.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Gaussian-Distribution/ex8data1.mat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Gaussian-Distribution/ex8data2.mat" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,13 +16,11 @@
       <file leaf-file-name="Collaboratice-Filtering.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Collaborative-Filtering-For-Recommender-System/Collaboratice-Filtering.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="98" column="0" lean-forward="true" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+            <state relative-caret-position="81">
+              <caret line="152" column="68" lean-forward="false" selection-start-line="152" selection-start-column="68" selection-end-line="152" selection-end-column="68" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
-                <element signature="e#214#1820#0" expanded="false" />
-                <element signature="e#1855#2183#0" expanded="false" />
-                <element signature="e#2291#3101#0" expanded="false" />
+                <element signature="e#2337#3157#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -66,10 +60,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="257" />
-    <option name="y" value="38" />
-    <option name="width" value="1242" />
-    <option name="height" value="805" />
+    <option name="x" value="375" />
+    <option name="y" value="24" />
+    <option name="width" value="1078" />
+    <option name="height" value="821" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -89,7 +83,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -100,7 +94,17 @@
             <path>
               <item name="Machine-Learning-Algorithm" type="b2602c69:ProjectViewProjectNode" />
               <item name="Machine-Learning-Algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="Collaborative-Filtering-For-Recommender-System" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Machine-Learning-Algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Machine-Learning-Algorithm" type="462c0819:PsiDirectoryNode" />
               <item name="Gaussian-Distribution-For-Anomaly-Detection" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Machine-Learning-Algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Machine-Learning-Algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="Linear-Regression-with-Multiple-Variables" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Machine-Learning-Algorithm" type="b2602c69:ProjectViewProjectNode" />
@@ -111,7 +115,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -129,7 +133,24 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Gaussian-Distribution">
+  <component name="RunManager" selected="Python.Collaboratice-Filtering">
+    <configuration name="Collaboratice-Filtering" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Collaborative-Filtering-For-Recommender-System" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Machine-Learning-Algorithm" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Collaborative-Filtering-For-Recommender-System/Collaboratice-Filtering.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <configuration name="Gaussian-Distribution" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -160,23 +181,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Machine-Learning-Algorithm" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/K-Means/K-Means.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="Logistic-Regression" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Logistic-Regression" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Machine-Learning-Algorithm" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Logistic-Regression/Logistic-Regression.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -216,19 +220,19 @@
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.Logistic-Regression" />
-      <item index="1" class="java.lang.String" itemvalue="Python.Neural-Network" />
-      <item index="2" class="java.lang.String" itemvalue="Python.K-Means" />
-      <item index="3" class="java.lang.String" itemvalue="Python.Principle-Component-Analysis" />
-      <item index="4" class="java.lang.String" itemvalue="Python.Gaussian-Distribution" />
+      <item index="0" class="java.lang.String" itemvalue="Python.Neural-Network" />
+      <item index="1" class="java.lang.String" itemvalue="Python.K-Means" />
+      <item index="2" class="java.lang.String" itemvalue="Python.Principle-Component-Analysis" />
+      <item index="3" class="java.lang.String" itemvalue="Python.Gaussian-Distribution" />
+      <item index="4" class="java.lang.String" itemvalue="Python.Collaboratice-Filtering" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.Gaussian-Distribution" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Principle-Component-Analysis" />
-        <item index="2" class="java.lang.String" itemvalue="Python.K-Means" />
-        <item index="3" class="java.lang.String" itemvalue="Python.Neural-Network" />
-        <item index="4" class="java.lang.String" itemvalue="Python.Logistic-Regression" />
+        <item index="0" class="java.lang.String" itemvalue="Python.Collaboratice-Filtering" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Gaussian-Distribution" />
+        <item index="2" class="java.lang.String" itemvalue="Python.Principle-Component-Analysis" />
+        <item index="3" class="java.lang.String" itemvalue="Python.K-Means" />
+        <item index="4" class="java.lang.String" itemvalue="Python.Neural-Network" />
       </list>
     </recent_temporary>
   </component>
@@ -249,20 +253,19 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="257" y="38" width="1242" height="805" extended-state="0" />
-    <editor active="true" />
+    <frame x="375" y="24" width="1078" height="821" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17666666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20752896" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32307693" sideWeight="0.5058997" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42957747" sideWeight="0.4941003" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3112676" sideWeight="0.4941003" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30991736" sideWeight="0.4941003" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30991736" sideWeight="0.4941003" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37605634" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6633065" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3305785" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.61003864" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -388,26 +391,6 @@
           <line>31</line>
           <option name="timeStamp" value="207" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Collaborative-Filtering-For-Recommender-System/Collaboratice-Filtering.py</url>
-          <line>61</line>
-          <option name="timeStamp" value="225" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Collaborative-Filtering-For-Recommender-System/Collaboratice-Filtering.py</url>
-          <line>90</line>
-          <option name="timeStamp" value="226" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Collaborative-Filtering-For-Recommender-System/Collaboratice-Filtering.py</url>
-          <line>93</line>
-          <option name="timeStamp" value="227" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Collaborative-Filtering-For-Recommender-System/Collaboratice-Filtering.py</url>
-          <line>95</line>
-          <option name="timeStamp" value="228" />
-        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -416,19 +399,23 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="229" />
+      <option name="time" value="247" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Gaussian-Distribution/Gaussian-Distribution.py">
+    <entry file="file://$PROJECT_DIR$/Collaborative-Filtering-For-Recommender-System/Collaboratice-Filtering.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#2337#3157#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Gaussian-Distribution/Gaussian-Distribution.py" />
     <entry file="file://$PROJECT_DIR$/Principle-Component-Analysis/Principle-Component-Analysis.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -619,20 +606,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Logistics-Regression/Logistic-Regression.py" />
-    <entry file="file://$PROJECT_DIR$/Linear-Regression-with-Multiple-Variables/Linear-Regression-with-Multiple-Variables.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="73" column="39" lean-forward="false" selection-start-line="73" selection-start-column="39" selection-end-line="73" selection-end-column="39" />
-          <folding>
-            <element signature="e#314#2215#0" expanded="false" />
-            <element signature="e#4611#5120#0" expanded="false" />
-            <element signature="e#5917#6088#0" expanded="false" />
-            <element signature="e#6147#6416#0" expanded="false" />
-            <element signature="e#6498#6800#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Linear-Regression-with-One-Variable/Linear-Regression-with-One-Variable.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-251">
@@ -693,22 +666,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="308" column="0" lean-forward="false" selection-start-line="308" selection-start-column="0" selection-end-line="308" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gaussian-Distribution/Gaussian-Distribution.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="88" column="0" lean-forward="true" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Gaussian-Distribution/Gaussian-Distribution.py" />
     <entry file="file://$PROJECT_DIR$/Neural-Network/Neural-Network.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -729,21 +687,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gaussian-Distribution-For-Anomaly-Detection/Gaussian-Distribution.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="92" column="0" lean-forward="true" selection-start-line="83" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+        <state relative-caret-position="261">
+          <caret line="95" column="22" lean-forward="true" selection-start-line="95" selection-start-column="22" selection-end-line="95" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Linear-Regression-with-Multiple-Variables/Linear-Regression-with-Multiple-Variables.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="73" column="39" lean-forward="false" selection-start-line="73" selection-start-column="39" selection-end-line="73" selection-end-column="39" />
+          <folding>
+            <element signature="e#314#2215#0" expanded="false" />
+            <element signature="e#4611#5120#0" expanded="false" />
+            <element signature="e#5917#6088#0" expanded="false" />
+            <element signature="e#6147#6416#0" expanded="false" />
+            <element signature="e#6498#6800#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="308" column="0" lean-forward="false" selection-start-line="308" selection-start-column="0" selection-end-line="308" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Collaborative-Filtering-For-Recommender-System/Collaboratice-Filtering.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="98" column="0" lean-forward="true" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+        <state relative-caret-position="81">
+          <caret line="152" column="68" lean-forward="false" selection-start-line="152" selection-start-column="68" selection-end-line="152" selection-end-column="68" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
-            <element signature="e#214#1820#0" expanded="false" />
-            <element signature="e#1855#2183#0" expanded="false" />
-            <element signature="e#2291#3101#0" expanded="false" />
+            <element signature="e#2337#3157#0" expanded="false" />
           </folding>
         </state>
       </provider>
