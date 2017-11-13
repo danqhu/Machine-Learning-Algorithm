@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e0530c9-c553-408c-a0f5-a4b1b0b73213" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Principle-Component-Analysis/Principle-Component-Analysis.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gaussian-Distribution/Gaussian-Distribution.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/K-Means/K-Means.py" afterPath="$PROJECT_DIR$/K-Means/K-Means.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,13 +14,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Principle-Component-Analysis.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Principle-Component-Analysis/Principle-Component-Analysis.py">
+      <file leaf-file-name="Gaussian-Distribution.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Gaussian-Distribution/Gaussian-Distribution.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="17" column="68" lean-forward="false" selection-start-line="17" selection-start-column="68" selection-end-line="17" selection-end-column="68" />
+            <state relative-caret-position="221">
+              <caret line="121" column="54" lean-forward="true" selection-start-line="121" selection-start-column="54" selection-end-line="121" selection-end-column="54" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
+                <element signature="e#1232#1982#0" expanded="false" />
+                <element signature="e#1992#2080#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -55,13 +56,14 @@
         <option value="$PROJECT_DIR$/Neural-Network/Neural-Network.py" />
         <option value="$PROJECT_DIR$/K-Means/K-Means.py" />
         <option value="$PROJECT_DIR$/Principle-Component-Analysis/Principle-Component-Analysis.py" />
+        <option value="$PROJECT_DIR$/Gaussian-Distribution/Gaussian-Distribution.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="257" />
-    <option name="y" value="28" />
-    <option name="width" value="1302" />
+    <option name="x" value="360" />
+    <option name="y" value="63" />
+    <option name="width" value="1034" />
     <option name="height" value="805" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -82,6 +84,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -89,12 +92,16 @@
               <item name="Machine-Learning-Algorithm" type="b2602c69:ProjectViewProjectNode" />
               <item name="Machine-Learning-Algorithm" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Machine-Learning-Algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Machine-Learning-Algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="Principle-Component-Analysis" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -112,7 +119,24 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Principle-Component-Analysis">
+  <component name="RunManager" selected="Python.Gaussian-Distribution">
+    <configuration name="Gaussian-Distribution" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Gaussian-Distribution" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Machine-Learning-Algorithm" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Gaussian-Distribution/Gaussian-Distribution.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <configuration name="K-Means" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -126,23 +150,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Machine-Learning-Algorithm" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/K-Means/K-Means.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="Linear-Regression-with-Multiple-Variables" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Linear-Regression-with-Multiple-Variables" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Machine-Learning-Algorithm" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Linear-Regression-with-Multiple-Variables/Linear-Regression-with-Multiple-Variables.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -199,19 +206,19 @@
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.Linear-Regression-with-Multiple-Variables" />
-      <item index="1" class="java.lang.String" itemvalue="Python.Logistic-Regression" />
-      <item index="2" class="java.lang.String" itemvalue="Python.Neural-Network" />
-      <item index="3" class="java.lang.String" itemvalue="Python.K-Means" />
-      <item index="4" class="java.lang.String" itemvalue="Python.Principle-Component-Analysis" />
+      <item index="0" class="java.lang.String" itemvalue="Python.Logistic-Regression" />
+      <item index="1" class="java.lang.String" itemvalue="Python.Neural-Network" />
+      <item index="2" class="java.lang.String" itemvalue="Python.K-Means" />
+      <item index="3" class="java.lang.String" itemvalue="Python.Principle-Component-Analysis" />
+      <item index="4" class="java.lang.String" itemvalue="Python.Gaussian-Distribution" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.Principle-Component-Analysis" />
-        <item index="1" class="java.lang.String" itemvalue="Python.K-Means" />
-        <item index="2" class="java.lang.String" itemvalue="Python.Neural-Network" />
-        <item index="3" class="java.lang.String" itemvalue="Python.Logistic-Regression" />
-        <item index="4" class="java.lang.String" itemvalue="Python.Linear-Regression-with-Multiple-Variables" />
+        <item index="0" class="java.lang.String" itemvalue="Python.Gaussian-Distribution" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Principle-Component-Analysis" />
+        <item index="2" class="java.lang.String" itemvalue="Python.K-Means" />
+        <item index="3" class="java.lang.String" itemvalue="Python.Neural-Network" />
+        <item index="4" class="java.lang.String" itemvalue="Python.Logistic-Regression" />
       </list>
     </recent_temporary>
   </component>
@@ -232,20 +239,20 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="257" y="28" width="1302" height="805" extended-state="0" />
+    <frame x="360" y="63" width="1034" height="805" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16031747" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20967741" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32307693" sideWeight="0.5058997" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42957747" sideWeight="0.4941003" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42957747" sideWeight="0.4941003" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3112676" sideWeight="0.4941003" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37605634" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6634921" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6633065" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -361,6 +368,36 @@
           <line>34</line>
           <option name="timeStamp" value="205" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Principle-Component-Analysis/Principle-Component-Analysis.py</url>
+          <line>30</line>
+          <option name="timeStamp" value="206" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Principle-Component-Analysis/Principle-Component-Analysis.py</url>
+          <line>31</line>
+          <option name="timeStamp" value="207" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Gaussian-Distribution/Gaussian-Distribution.py</url>
+          <line>77</line>
+          <option name="timeStamp" value="221" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Gaussian-Distribution/Gaussian-Distribution.py</url>
+          <line>30</line>
+          <option name="timeStamp" value="222" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Gaussian-Distribution/Gaussian-Distribution.py</url>
+          <line>105</line>
+          <option name="timeStamp" value="223" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Gaussian-Distribution/Gaussian-Distribution.py</url>
+          <line>107</line>
+          <option name="timeStamp" value="224" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -369,11 +406,31 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="206" />
+      <option name="time" value="225" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Principle-Component-Analysis/Principle-Component-Analysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="30" lean-forward="false" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Principle-Component-Analysis/Principle-Component-Analysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Neural-Network/Neural-Network.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -537,13 +594,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/numpy/core/numeric.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -593,10 +643,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/matplotlib/axes/_base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="638" column="0" lean-forward="false" selection-start-line="638" selection-start-column="0" selection-end-line="638" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/K-Means/K-Means.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1204">
+          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Neural-Network/Neural-Network.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="262" column="0" lean-forward="false" selection-start-line="262" selection-start-column="0" selection-end-line="262" selection-end-column="0" />
+        <state relative-caret-position="273">
+          <caret line="266" column="0" lean-forward="true" selection-start-line="259" selection-start-column="0" selection-end-line="266" selection-end-column="0" />
           <folding>
             <element signature="e#1#19#0" expanded="true" />
             <element signature="e#2638#4341#0" expanded="false" />
@@ -613,20 +680,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/K-Means/K-Means.py">
+    <entry file="file://$PROJECT_DIR$/Principle-Component-Analysis/Principle-Component-Analysis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+        <state relative-caret-position="269">
+          <caret line="21" column="42" lean-forward="true" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/matplotlib/axes/_base.py">
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="638" column="0" lean-forward="false" selection-start-line="638" selection-start-column="0" selection-end-line="638" selection-end-column="0" />
+        <state relative-caret-position="255">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -639,12 +706,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Principle-Component-Analysis/Principle-Component-Analysis.py">
+    <entry file="file://$PROJECT_DIR$/Gaussian-Distribution/Gaussian-Distribution.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="17" column="68" lean-forward="false" selection-start-line="17" selection-start-column="68" selection-end-line="17" selection-end-column="68" />
+        <state relative-caret-position="221">
+          <caret line="121" column="54" lean-forward="true" selection-start-line="121" selection-start-column="54" selection-end-line="121" selection-end-column="54" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#1232#1982#0" expanded="false" />
+            <element signature="e#1992#2080#0" expanded="false" />
           </folding>
         </state>
       </provider>
